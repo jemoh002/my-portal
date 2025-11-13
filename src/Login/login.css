@@ -1,6 +1,7 @@
 .login{
     display: flex;
     flex-direction: column;
+    margin: 0 50px;
 }
 
 .top-login{
@@ -13,45 +14,148 @@ button{
     background-color: #FFC20E;
     border-radius: 0;
     text-decoration: underline;
-    padding: 8px 16px;
+    padding: 6px 10px;
+    border: none;
 }
 
 .middle-login{
-    padding: 50px;
+    /* padding: 50px; */
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 50px 0;
+}
+
+.login-image{
+    margin: 0px 0.015625px 0px 0px;
+    padding: 0px 50px 20px 70px;
+}
+
+.login_img1{
+    /* 523*423 */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .login-form{
+    width: 47%;
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
     border-radius: 2px;
+    padding-bottom: 40px;
 }
 
 .title-div{
     color: #FFFFFF;
     background-color: #143F6B;
     width: 100%;
+    
+}
+
+.login-h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
 }
 
 .login-form-div{
+    margin: 50px 30px;
     display: flex;
     flex-direction: column;
 }
 
+p{
+    font-size: 17px;
+}
+
+.required-p1{
+    margin-left: 20px;
+}
+
 label{
     align-self: flex-end;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+input{
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 0.5px solid gray;
 }
 
 .star-icon{
     height: 10px;
     width: 10px;
+    color: maroon;
 }
 
 .login-btn-group{
     align-self: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.forgot-password-p{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.login-btn{
+    text-decoration: none;
+}
+
+.footer-login{
+    height: 20px;
+    width: 100%;
+    background-color: #143F6B;
+}
+
+@media screen and (max-width: 1300px){
+    .login_img1{
+        /* 523*423 */
+        width: 418.6px;
+        height: 338.4px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .login_img1{
+        width: 366.1px;
+        height: 296.1px
+    }
+}
+
+@media screen and (max-width: 991px){
+    .middle-login{
+        flex-direction: column-reverse;
+    }
+
+    .login-form{
+        width: 100%;
+    }
+
+    .login-image{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login_img1{
+        /* 523*423 */
+        width: 523px;
+        height: 423px;
+        align-self: center;
+        margin-top: 50px;
+    }
+
+    label{
+        align-self: flex-start;
+        margin: 20px 0;
+    }
 }

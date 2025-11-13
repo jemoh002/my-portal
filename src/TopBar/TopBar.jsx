@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, useNavigate, useLocation } from "react-router-dom";
 import './TopBar.css'
 
 // Single-file React + Tailwind front-end (static) for a multi-page portal
@@ -8,11 +8,21 @@ import './TopBar.css'
 
 
 function TopBar() {
-return (
-    <div className="topbar">
-        <img src="logo.png" alt="" />
-    </div>
-);
+    const location = useLocation()
+
+    if (location.pathname === "/"){
+        return (
+            <div className="topbar">
+                <img src="logo.png" alt="" className="logo"/>
+            </div>
+        );
+    } else if (location.pathname === "/login"){
+        return (
+            <div className="topbar added">
+                <img src="logo2.png" alt="" className="logo2"/>
+            </div>
+        )
+    }
 }
 
 export default TopBar;

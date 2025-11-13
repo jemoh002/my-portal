@@ -1,0 +1,322 @@
+.my-information{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-bar{
+    padding: 30px;
+    width: 85%;
+    background-color: #F2F2F2;
+}
+
+.myinfo-title{
+    font-size: 3.2em;
+}
+
+.info-underline{
+    width: 13.6em;
+    height: 5px;
+    background-color: #143F6B;
+}
+
+.personal-info-p{
+    margin: 10px 0;
+}
+
+.info-categories{
+    display: flex;
+    flex-direction: row;
+    color: #143F6B;
+}
+
+.encompasser{
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.info-cat-h2{
+    flex: 1;
+    background-color: #F2F2F2;
+    margin: 20px 2px 2px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.info-cat-h2:hover{
+    background-color: rgb(206, 203, 203);
+}
+
+.active-card{
+    flex: 1;
+    background-color: #2C6CA6;
+    margin: 20px 2px 2px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+}
+
+.separator{
+    margin: 0;
+    height: 10px;
+    background-color: #2C6CA6;
+    border: none;
+}
+
+.required-p{
+    color: maroon;
+    margin: 10px 0;
+    border-bottom: 0.5px solid gray;
+    padding-bottom: 10px;
+}
+
+.div-row{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.div-col{
+    flex: 1;
+}
+
+.p-key{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.myinformation-btn{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    align-self: center;
+}
+
+.addresses-info,.additional-info{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+}
+
+.addresses-info-top{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.reference-div{
+    flex: 1;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.reference-p{
+    padding: 10px 0;
+    font-size: 24px;
+    color: #143F6B;
+    font-weight: 600;
+}
+
+.newadd-div{
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.newadd-btn{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px 40px;
+}
+
+.billing-p{
+    margin: 10px 0;
+    background-color: #D9EDF7;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.addresses-info-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.addresses-info-cols{
+    flex: 1;
+}
+
+.edit-div{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.edit-btn{
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    align-self: flex-end;
+    margin: 20px 0 10px 0;
+}
+
+.additional-info-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.additional-pkey{
+    margin: 20px 0;
+}
+
+.additional-btn{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    align-self: center;
+    margin: 20px 0 10px 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .div-row{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 30px;
+}
+}
+
+@media screen and (max-width: 991px){
+    .addresses-info-top{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .addresses-info-row{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .main-bar{
+        padding: 30px;
+        width: 100%;
+        background-color: #F2F2F2;
+    }
+
+    .my-information{
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+    }
+
+    .info-categories{
+        flex-wrap: wrap;
+    }
+
+    .personal{
+        flex: 1;
+    }
+    .addresses{
+        flex: 1;
+    }
+    .additional{
+        flex: 2;
+        white-space: nowrap;
+    }
+    
+}
+
+@media screen and (max-width: 769px){
+    .reference-p{
+        padding: 7px 0;
+        font-size: 20px;
+        color: #002546;
+        font-weight: 800;
+    }
+
+    .newadd-btn{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px 20px;
+        margin-top: 15px;
+        margin-right: 20px;
+    }
+
+    .billing-p{
+        color: #333333;
+    }
+
+    .edit-btn{
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        align-self: flex-end;
+        margin: 20px 0 10px 0;
+    }
+
+    .myinformation-btn{
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 480px){
+    .downbar{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        padding: 30px;
+    }
+
+    .downbar-left{
+        align-self: flex-end;
+        background-color: transparent;
+    }
+
+    .print-icon{
+        /* width: 20px;
+        height: 20px; */
+        margin-right: 10px;
+    }
+
+    .print-btn{
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        background-color: green;
+        font-weight: 600;
+    }
+
+    .pkey{
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .pvalue{
+        margin: 10px 0;
+    }
+
+}
+
+

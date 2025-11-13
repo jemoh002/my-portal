@@ -1,4 +1,32 @@
 .topbar{
-    background-color: #fff;
+    /* margin: 20px; */
+    margin-bottom: 0;
 }
 
+.added{
+    background-color: #143F6B;
+}
+
+.logo{
+    width: 256px ; /* 320px; */
+    height: 106px;  /* 132px; */
+    margin: 10px 20px;
+}
+
+.logo2{
+    /* 550 * 120 */
+    width: 440px ; 
+    height: 96px;  
+    margin: 10px 20px;
+}
+
+@media screen and (max-width: 768px){
+    .topbar{
+        background-color: #fff;
+    }
+
+    .added{
+    background-color: #143F6B;
+}
+
+}

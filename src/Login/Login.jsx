@@ -8,30 +8,34 @@ function Login() {
 
     return (
         <div className="login">
-            <TopBar/>
 
             <div className="top-login">
-                <button>BACK TO HOME</button>
+                <Link to="/">
+                    <button>BACK TO HOME</button>
+                </Link>
             </div>
 
             <div className="middle-login">
                 <div className="login-image">
-                    <img src="login_img1.jpg" alt="" />
+                    <img src="login_img1.jpg" alt="" className="login_img1"/>
                 </div>
+
                 <div className="login-form">
-                    <div className="title-div"><h1>Student Login</h1></div> 
+                    <div className="title-div"><h1 className="login-h1">Student Login</h1></div> 
                     <div className="login-form-div">                   
-                        <p>Required Field <FaStar className="star-icon"/></p>
-                        <label htmlFor="username">Username <FaStar className="star-icon"/></label>
+                        <p className="required-p1">Required Field <FaStar className="star-icon"/></p>
+                        <label htmlFor="username"><u>U</u>sername <FaStar className="star-icon"/></label>
                         <input type="text" id="username" />
-                        <label htmlFor="password">Password <FaStar className="star-icon"/></label>
+                        <label htmlFor="password"><u>P</u>assword <FaStar className="star-icon"/></label>
                         <input type="password" id="password" />
                         <p>Password is case sensitive</p>
                     </div>
 
                     <div className="login-btn-group">
-                        <p>Forgot your Password</p>
-                        <button>LOGIN</button>
+                        <p className="forgot-password-p">Forgot your Password</p>
+                        <Link to="/myinformation">
+                            <button className="login-btn">LOGIN</button>
+                        </Link>
                     </div>
 
 
