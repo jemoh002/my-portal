@@ -43,14 +43,32 @@ return (
         </div>
 
         <div className={menuClick ? "noti-header": "noti-header-disap"}>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>Campus Info</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>Academics</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>Transfer Credits</h2>
+
                 <h2 className="noti-title" onClick={() => setOpenProfile(!openProfile)}><HiMiniSquares2X2 className="mini-square"/>My Profile</h2>
                 {openProfile && <>
                     <div className="noti-subtitle-div">
+                        <h3 className="noti-subtitle">Change Password</h3>
                         <h3 className="noti-subtitle">My Message Center</h3>
-                        <h3 className="noti-subtitle">My Information</h3>
+                        <h3 className="noti-subtitle" onClick={() => setMenuClick(!menuClick)}>My Information</h3>
                     </div>
                     
                 </>}
+
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>Message Center</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>My Finances</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>My Classes</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>My Career</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>My Documents</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>Student Services</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>Finances</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>ICT Support</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>Library Services</h2>
+                <h2 className="noti-title"><HiMiniSquares2X2 className="mini-square"/>Corporate Email</h2>
+
+                
                 
            
         </div>

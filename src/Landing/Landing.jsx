@@ -14,13 +14,13 @@ return (
         <hr className="landing-hr"/>
         <p className="landing-p">Log into the portal to view your academic information, receive personalized communication, and use our self-service tools.</p>
         <div className="selection">
-            {/* <Link to="/login" style={{ textDecoration: "none" }}> */}
-            <div className="student-homepage">
-                <RiGraduationCapFill color="blue" className="graduation-cap-icon"/>
-                <h2>Student Portal Homepage</h2>
-                <p className="h-p">Current Student Login Here</p>
-            </div>
-            {/* </Link> */}
+            <Link to="/login" style={{ textDecoration: "none" }}>
+                <div className="student-homepage">
+                    <RiGraduationCapFill color="blue" className="graduation-cap-icon"/>
+                    <h2>Student Portal Homepage</h2>
+                    <p className="h-p">Current Student Login Here</p>
+                </div>
+            </Link>
 
             <div className="faculty-homepage">
                 <GiTeacher color="#AEF359" className="teacher-icon"/>
