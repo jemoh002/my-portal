@@ -46,7 +46,7 @@ return (
                             <p className="p-key">Date of Birth</p>
                             <p className="p-value">8/5/1998</p>
                             <p className="p-key">Residency Status</p>
-                            <p className="p-value">Non-Resident</p>
+                            <p className="p-value" style={{ color: "white" }}>jj</p>
                         </div>
                         <div className="div-col">
                             <p className="p-key">Student ID</p>
@@ -63,7 +63,7 @@ return (
                     <div className="div-row">
                         <div className="div-col">
                             <p className="p-key">Preferred Name</p>
-                            <p className="p-value"></p>
+                            <p className="p-value">Jemoh</p>
                             <p className="p-key">Nickname</p>
                             <p className="p-value">42700005234/18</p>
                             <p className="p-key">Country</p>
